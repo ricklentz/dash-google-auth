@@ -57,8 +57,7 @@ Steps to try this out yourself:
    under the section **OAuth 2.0 client IDs**.
 
 4. Replace `authorized_emails` in `app.py` with whatever
-   Google emails you want to grant access to your app. In production, I'd
-   recommend getting these from a database instead.
+   Google emails you want to grant access to your app. It is recommended that you getting these from a persistance layer.
 
 5. Run `python app.py` and open [localhost](http://localhost:8050/) in a
    browser window to try it out! If the app loads automatically without
