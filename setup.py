@@ -17,7 +17,7 @@ setup(
         'dash-html-components>=0.15.0',
         'Flask>=1.0.2',
         'Flask-Dance>=2.0.0',
-        'six>=1.13.0',
+        'six>=1.12.0',
     ],
     setup_requires=['pytest-runner', 'setuptools_scm'],
     tests_require=['pytest'],
@@ -26,6 +26,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
-    version="0.19.99",
+    version="1.9.99",
     zip_safe=False,
 )
