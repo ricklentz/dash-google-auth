@@ -1,7 +1,7 @@
-# Dash Google Auth
+# Dash Google Auth Email
 
-Dash Google Auth is a simple library using Google OAuth to authenticate and
-view a [Dash](https://dash.plot.ly/) app.
+Dash Google Auth Email is a simple library using Google OAuth to authenticate and
+view a [Dash](https://dash.plot.ly/) app.  This project is almost entirely sourced from the parernt project [dash-google-auth](https://github.com/lchapo/dash-google-auth)
 
 This Library uses [Flask Dance](https://github.com/singingwolfboy/flask-dance)
 and a modified version of Plotly's own [dash auth](https://github.com/plotly/dash-auth)
@@ -15,7 +15,7 @@ class, i.e.
 ```python
 from dash import Dash
 from flask import Flask
-from dash_google_auth import GoogleOAuth
+from dash_google_auth_email import GoogleOAuth
 
 server = Flask(__name__)
 server.config.update({
@@ -36,16 +36,16 @@ auth = GoogleOAuth(app, authorized_emails, additional_scopes)
 ## Example
 Steps to try this out yourself:
 
-1. Install the `dash-google-auth` library using `pip`:
+1. Install the `dash-google-auth-email` library using `pip`:
 
     ```bash
-    $ pip install dash-google-auth
+    $ pip install dash-google-auth-email
     ```
 
 2. Follow the [Flask Dance Guide](http://flask-dance.readthedocs.io/en/latest/quickstarts/google.html)
    to create an app on the google admin console
 
-3. Make a copy of [app.py](https://github.com/lucaschapin/dash-google-auth/blob/master/app.py)
+3. Make a copy of [app.py](https://github.com/ricklentz/dash-google-auth-email/blob/master/app.py)
    and set the variables (or set the corresponding environment variables):
     ```python
     server.config["GOOGLE_OAUTH_CLIENT_ID"] = ...

@@ -4,7 +4,7 @@ Test Dash Google Auth.
 
 import pytest
 
-from dash_google_auth import GoogleOAuth
+from dash_google_auth_email import GoogleOAuth
 
 from dash import Dash
 from flask import Flask
