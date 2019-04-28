@@ -6,7 +6,6 @@ setup(
     name="dash-google-auth-email",
     description="Dash Google Auth Email",
     long_description=open('README.md', 'rt').read().strip(),
-    long_description_content_type='test/markdown',
     author="Rick Lentz", author_email='rlentz@amfam.com',
     url="https://github.com/ricklentz/dash-google-auth-email",
     license='MIT',
@@ -27,6 +26,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: Implementation :: CPython',
     ],
-    use_scm_version=True,
+    version="0.19.99",
     zip_safe=False,
 )
