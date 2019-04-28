@@ -43,6 +43,21 @@ class GoogleOAuth(Auth):
             # unauthorized email
             return abort(403)
 
+    def get_email(self):
+        if not google.authorized:
+            # send to google login
+            return False
+
+        resp = google.get("/oauth2/v2/userinfo")
+        assert resp.ok, resp.text
+
+        email = session['email'] = resp.json().get('email')
+        if email in self.authorized_emails:
+            return email
+        else:
+            # unauthorized email
+            return abort(403)
+
     def login_request(self):
         # send to google auth page
         return redirect(url_for("google.login"))
